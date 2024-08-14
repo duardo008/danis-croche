@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danis Crochê</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Captura de tela 2024-08-14 092426.png" alt="Logo Danis Crochê">
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">Sobre</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                    <li><a href="#testimonials" class="nav-link">Depoimentos</a></li>
+                    <li><a href="#contact" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Bem-vindo ao Danis Crochê</h1>
+            <p>Transformando fios em arte! Conheça nossas bolsas de crochê exclusivas.</p>
+            <div class="buttons">
+                <a href="https://wa.me/5519981206852" target="_blank" class="btn btn-whatsapp">Fale Conosco no WhatsApp</a>
+                <a href="https://www.instagram.com/danihilariocroche?igsh=NXpud2RsZmFqN2Rm" target="_blank" class="btn btn-instagram">Siga-nos no Instagram</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Na Danis Crochê, cada peça é feita com amor e dedicação. Explore nossa coleção e descubra o charme dos nossos produtos.</p>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Galeria</h2>
+            <div class="photo-grid">
+                <div class="photo" style="background-image: url('1.jpeg');" onclick="openLightbox('1.jpeg')"></div>
+                <div class="photo" style="background-image: url('2.jpeg');" onclick="openLightbox('2.jpeg')"></div>
+                <div class="photo" style="background-image: url('3.jpeg');" onclick="openLightbox('3.jpeg')"></div>
+                <div class="photo" style="background-image: url('4.jpeg');" onclick="openLightbox('4.jpeg')"></div>
+                <div class="photo" style="background-image: url('5.jpeg');" onclick="openLightbox('5.jpeg')"></div>
+                <div class="photo" style="background-image: url('6.jpeg');" onclick="openLightbox('6.jpeg')"></div>
+                <div class="photo" style="background-image: url('7.jpeg');" onclick="openLightbox('7.jpeg')"></div>
+                <div class="photo" style="background-image: url('8.jpeg');" onclick="openLightbox('8.jpeg')"></div>
+                <div class="photo" style="background-image: url('9.jpeg');" onclick="openLightbox('9.jpeg')"></div>
+                <div class="photo" style="background-image: url('10.jpeg');" onclick="openLightbox('10.jpeg')"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Depoimentos</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial">
+                    <p>"Adorei minha bolsa de crochê! Excelente qualidade e acabamento."</p>
+                    <span>Maria Silva</span>
+                </div>
+                <div class="testimonial">
+                    <p>"Os produtos são incríveis e o atendimento é ótimo. Super recomendo!"</p>
+                    <span>João Pereira</span>
+                </div>
+                <!-- Adicione mais depoimentos conforme necessário -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para mais informações ou dúvidas.</p>
+            <div class="buttons">
+                <a href="https://wa.me/SEU_NUMERO_DE_WHATSAPP" target="_blank" class="btn btn-whatsapp">WhatsApp</a>
+                <a href="https://www.instagram.com/SEU_INSTAGRAM" target="_blank" class="btn btn-instagram">Instagram</a>
+            <!-- Formulário de contato pode ser adicionado aqui -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Danis Crochê. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="">
+        <div id="caption"></div>
+    </div>
+
+    <script>
+        function openLightbox(imageSrc) {
+            var lightbox = document.getElementById('lightbox');
+            var lightboxImg = document.getElementById('lightbox-img');
+            lightbox.style.display = 'block';
+            lightboxImg.src = imageSrc;
+        }
+
+        function closeLightbox() {
+            var lightbox = document.getElementById('lightbox');
+            lightbox.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
